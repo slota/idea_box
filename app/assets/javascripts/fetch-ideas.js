@@ -17,6 +17,9 @@ function renderIndexIdeas(allIdeas){
       + idea.description
       + " "
       + idea.quality
+      + " "
+      + "<button type='button' class='thumb-up-idea' data-id='"+ idea.id +"'>Thumbs Up</button>"
+      + "<button type='button' class='thumb-down-idea' data-id='"+ idea.id +"'>Thumbs Down</button>"
       + "<button type='button' class='delete-idea' data-id='"+ idea.id +"'>Delete</button>"
       + "</div>"
     )
