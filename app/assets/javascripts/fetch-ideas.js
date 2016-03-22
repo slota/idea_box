@@ -11,14 +11,14 @@ function fetchIdeas(){
 function renderIndexIdeas(allIdeas){
   var index = allIdeas.map(function(idea){
     return(
-      "<div>"
+      "<div class='idea'>"
       + idea.name
       + " "
       + idea.description
       + " "
       + idea.quality
-      + "</div>"
       + "<button type='button' class='delete-idea' data-id='"+ idea.id +"'>Delete</button>"
+      + "</div>"
     )
   })
   $('.ideas-list').append(index)
