@@ -19,6 +19,8 @@ $(document).ready(function(){
   createIdea()
   fetchIdeas()
   deleteIdea()
+  upIdea()
+  downIdea()
 });
 
 $()
