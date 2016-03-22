@@ -11,9 +11,10 @@ function createIdea(){
       url:     "/api/v1/ideas",
       data:    postParams,
       success: function(newPost) {
-        debugger;
+        // debugger;
         $("#post-name").val(""),
         $("#post-description").val(""),
+        $('.ideas-list').empty(),
         fetchIdeas()
       },
       error: function(xhr) {

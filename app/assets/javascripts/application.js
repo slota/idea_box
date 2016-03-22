@@ -18,6 +18,7 @@
 $(document).ready(function(){
   createIdea()
   fetchIdeas()
+  deleteIdea()
 });
 
 $()

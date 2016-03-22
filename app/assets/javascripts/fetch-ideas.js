@@ -13,10 +13,19 @@ function renderIndexIdeas(allIdeas){
     return(
       "<div>"
       + idea.name
+      + " "
+      + idea.description
+      + " "
+      + idea.quality
       + "</div>"
+      + "<button type='button' class='delete-idea' data-id='"+ idea.id +"'>Delete</button>"
     )
   })
   $('.ideas-list').append(index)
+  // $('.delete-idea').on('click', function(){
+  //   console.log("Im here")
+  //   console.log(this)
+  // })
   // itterate over the array of ideas
   // // map each idea how you want it to be displayed
   // append it to parent div
