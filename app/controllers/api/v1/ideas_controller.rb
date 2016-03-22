@@ -21,10 +21,10 @@ class Api::V1::IdeasController < ApplicationController
   def destroy
     respond_with Idea.delete(params[:id])
   end
-  
+
   private
 
   def idea_params
-    params.permit(:title, :body, :quality)
+    params.require(:post).permit(:name, :description, :quality)
   end
 end
