@@ -13,6 +13,10 @@ function renderIndexIdeas(allIdeas){
     return(
       "<div>"
       + idea.name
+      + " "
+      + idea.description
+      + " "
+      + idea.quality
       + "</div>"
     )
   })
