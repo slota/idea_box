@@ -12,11 +12,14 @@ function renderIndexIdeas(allIdeas){
   var index = allIdeas.map(function(idea){
     return(
       "<div class='idea'>"
-      + idea.name
+      + "<div id='name'>" + idea.name + "</div>"
       + " "
-      + idea.description
+      + "<div id='name'>" + idea.description + "</div>"
       + " "
-      + idea.quality
+      + "<div id='quality'>" + idea.quality + "</div>"
+      + " "
+      + "<button type='button' class='thumb-up-idea' data-id='"+ idea.id +"'>Thumbs Up</button>"
+      + "<button type='button' class='thumb-down-idea' data-id='"+ idea.id +"'>Thumbs Down</button>"
       + "<button type='button' class='delete-idea' data-id='"+ idea.id +"'>Delete</button>"
       + "</div>"
     )
