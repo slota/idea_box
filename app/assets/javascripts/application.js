@@ -21,6 +21,7 @@ $(document).ready(function(){
   deleteIdea()
   upIdea()
   downIdea()
+  editIdea()
 });
 
 $()
