@@ -17,6 +17,7 @@
 
 $(document).ready(function(){
   createIdea()
+  searchIdeas()
   fetchIdeas()
   deleteIdea()
   upIdea()
