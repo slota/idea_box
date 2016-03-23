@@ -1,12 +1,16 @@
 function upIdea(){
   $('.ideas-list').delegate('.thumb-up-idea','click', function(){
     var $idea = $(this).closest(".idea")
-      checkUp()
+      var newQuality = checkUp($idea.children("#quality").text())
       $.ajax({
       type: 'PATCH',
       url: 'api/v1/ideas/'+ $idea.children(".delete-idea").attr("data-id"),
+      data: {quality: newQuality},
       success: function() {
-        $idea.remove()
+        $("#post-name").val(""),
+        $("#post-description").val(""),
+        $('.ideas-list').empty(),
+        fetchIdeas()
       },
       error: function(xhr) {
         console.log(xhr)
@@ -14,6 +18,10 @@ function upIdea(){
     })
   })
 }
-var checkUp = function(){
-  debugger;
+
+var checkUp = function(quality){
+  if (quality == "swill") {
+    return "plausible"
+  }
+  else {return "genius"}
 }
