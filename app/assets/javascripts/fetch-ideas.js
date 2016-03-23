@@ -18,9 +18,11 @@ function renderIndexIdeas(allIdeas){
       + " "
       + "<div id='quality' type = 'text'>" + idea.quality + "</div>"
       + " "
+      + "<div id='buttons'>"
       + "<button type='button' class='thumb-up-idea' data-id='"+ idea.id +"'>Thumbs Up</button>"
       + "<button type='button' class='thumb-down-idea' data-id='"+ idea.id +"'>Thumbs Down</button>"
       + "<button type='button' class='delete-idea' data-id='"+ idea.id +"'>Delete</button>"
+      + "</div>"
       + "</div>"
     )
   })
