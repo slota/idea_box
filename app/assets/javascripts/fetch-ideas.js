@@ -11,12 +11,12 @@ function fetchIdeas(){
 function renderIndexIdeas(allIdeas){
   var index = allIdeas.map(function(idea){
     return(
-      "<div class='idea'>"
-      + "<div id='name'>" + idea.name + "</div>"
+      "<div class='idea'><br>"
+      + "<input id='name' type = 'text' value ="+ idea.name + "></input>"
       + " "
-      + "<div id='name'>" + idea.description + "</div>"
+      + "<input id='description' type = 'text' value ="+ idea.description + "></input>"
       + " "
-      + "<div id='quality'>" + idea.quality + "</div>"
+      + "<div id='quality' type = 'text'>" + idea.quality + "</div>"
       + " "
       + "<button type='button' class='thumb-up-idea' data-id='"+ idea.id +"'>Thumbs Up</button>"
       + "<button type='button' class='thumb-down-idea' data-id='"+ idea.id +"'>Thumbs Down</button>"
