@@ -14,7 +14,7 @@ function renderIndexIdeas(allIdeas){
       "<div class='idea'>"
       + "<div id='name' type = 'text'>" + idea.name + "</div>"
       + " "
-      + "<div id='description type = 'text'>" + idea.description + "</div>"
+      + "<div id='description' type = 'text'>" + idea.description + "</div>"
       + " "
       + "<div id='quality' type = 'text'>" + idea.quality + "</div>"
       + " "
