@@ -11,10 +11,10 @@ function fetchIdeas(){
 function renderIndexIdeas(allIdeas){
   var index = allIdeas.map(function(idea){
     return(
-      "<div class='idea'><br>"
-      + "<input id='name' type = 'text' value ="+ idea.name + "></input>"
+      "<div class='idea'>"
+      + "<div id='name' type = 'text'>" + idea.name + "</div>"
       + " "
-      + "<input id='description' type = 'text' value ="+ idea.description + "></input>"
+      + "<div id='description type = 'text'>" + idea.description + "</div>"
       + " "
       + "<div id='quality' type = 'text'>" + idea.quality + "</div>"
       + " "

@@ -1,7 +1,8 @@
 function editIdea(){
   // $('#post-name').on('click', function(){
   $('.ideas-list').delegate('#name','click', function(){
-  // debugger;
+    var editLine = "<input id='name' type ='text' value ='" + $(this).text() + "'></input"
+    debugger;
     // var $idea = $(this).closest(".idea")
     //   $.ajax({
     //   type: 'DELETE',
