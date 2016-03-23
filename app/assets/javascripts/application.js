@@ -23,6 +23,7 @@ $(document).ready(function(){
   upIdea()
   downIdea()
   editIdea()
+  sortIdeas()
 });
 
 $()
