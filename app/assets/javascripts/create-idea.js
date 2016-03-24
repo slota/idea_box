@@ -2,7 +2,7 @@ function createIdea(){
   $('#create-idea').on('click', function(){
     var postParams = {
       name: $("#post-name").val(),
-      description: $("#post-description").val()
+      description: $("#post-description").val().substring(0, 100)
     }
     $.ajax({
       type:    "POST",

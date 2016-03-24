@@ -17,7 +17,7 @@ function editIdea(){
       // debugger;
       $.ajax({
         type: 'PATCH',
-        url: 'api/v1/ideas/' + $idea.children(".delete-idea").attr("data-id"),
+        url: 'api/v1/ideas/' + $idea.children().children().attr("data-id"),
         data: {name: newName},
         success: function() {
           $('.ideas-list').empty(),
@@ -38,7 +38,7 @@ function editIdea(){
       // debugger;
       $.ajax({
         type: 'PATCH',
-        url: 'api/v1/ideas/' + $idea.children(".delete-idea").attr("data-id"),
+        url: 'api/v1/ideas/' + $idea.children().children().attr("data-id"),
         data: {description: newDescription},
         success: function() {
           $('.ideas-list').empty(),

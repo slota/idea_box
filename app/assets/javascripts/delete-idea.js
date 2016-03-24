@@ -3,7 +3,7 @@ function deleteIdea(){
     var $idea = $(this).closest(".idea")
       $.ajax({
       type: 'DELETE',
-      url: 'api/v1/ideas/'+ $idea.children(".delete-idea").attr("data-id"),
+      url: 'api/v1/ideas/'+ $idea.children().children().attr("data-id"),
       success: function() {
         $idea.remove()
       },

@@ -4,7 +4,7 @@ function upIdea(){
       var newQuality = checkUp($idea.children("#quality").text())
       $.ajax({
       type: 'PATCH',
-      url: 'api/v1/ideas/'+ $idea.children(".delete-idea").attr("data-id"),
+      url: 'api/v1/ideas/'+ $idea.children().children().attr("data-id"),
       data: {quality: newQuality},
       success: function() {
         $("#post-name").val(""),
